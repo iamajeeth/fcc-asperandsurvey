@@ -1,0 +1,12 @@
+.bg-image {
+  background-image: url("https://images.pexels.com/photos/4016593/pexels-photo-4016593.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+main {
+  margin: 0 auto;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/*# sourceMappingURL=styles.css.map */

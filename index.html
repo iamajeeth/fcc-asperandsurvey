@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Asperand Survey Form</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB CSS-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+  <!-- MDB Custom CSS -->
+  <link rel="stylesheet" href="scss/styles.css" />
+</head>
+
+<body>
+  <!--Main Navigation-->
+  <header>
+    <nav class="navbar fixed-top navbar-light bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Asperand Survey Form</a>
+      </div>
+    </nav>
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <div class="bg-image p-5">
+    <header class="py-3">
+      <div class="container text-dark text-center">
+        <!-- <h1 class="h1" id="title">Asperand Survey Form</h1> -->
+        <p class="h3 py-2" id="description">Thank you for your time!</p>
+      </div>
+    </header>
+    <main class="w-50">
+      <div class="container">
+        <div class="card p-3">
+          <div class="card-body">
+            <form id="survey-form">
+              <!-- Name input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" id="name-label" for="name">Name</label>
+                <input type="text" id="name" class="form-control border border-dark rounded"
+                  placeholder="Enter your name" required />
+              </div>
+
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" id="email-label" for="email">Email address</label>
+                <input type="email" id="email" class="form-control border border-dark rounded"
+                  placeholder="Enter your email address" required />
+              </div>
+
+              <!-- Age input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" id="number-label" for="number">Age(Optional)</label>
+                <input type="number" id="number" class="form-control border border-dark rounded" min="10" max="99"
+                  placeholder="Enter your age" />
+              </div>
+
+              <!-- Question 1 input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="dropdown">Which option best describes your current role?</label>
+                <select class="form-select" id="dropdown">
+                  <option disabled="" selected="" value="">Select your role</option>
+                  <option value="Student">Student</option>
+                  <option value="Full Time Job">Full Time Job</option>
+                  <option value="Others">Others</option>
+                </select>
+              </div>
+
+              <!-- Question 1 input -->
+              <div class="form-outline mb-4 col-12">
+                <label class="form-label" for="form4Example6">What is your favorite feature of asperand?</label>
+                <select class="form-select" id="form4Example6">
+                  <option disabled="" selected="" value="">Select your favorite</option>
+                  <option value="Challenges">Challenges</option>
+                  <option value="Projects">Projects</option>
+                  <option value="Community">Community</option>
+                </select>
+              </div>
+
+              <div class="form-outline mb-4">
+                <p>Would you recommend asperand to a friend?</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                    value="Definitely" checked />
+                  <label class="form-check-label" for="flexRadioDefault2"> Definitely </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                    value="May Be" />
+                  <label class="form-check-label" for="flexRadioDefault1"> May Be </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                    value="Not Sure" />
+                  <label class="form-check-label" for="flexRadioDefault1"> Not Sure </label>
+                </div>
+              </div>
+
+              <!-- checkbox -->
+              <div class="form-outline mb-4">
+                <p>What would you like to see improved? (Check all that apply)</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Front-end Projects" id="flexCheckDefault" />
+                  <label class="form-check-label" for="flexCheckDefault"> Front-end Projects </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Back-end Projects" id="flexCheckDefault" />
+                  <label class="form-check-label" for="flexCheckDefault"> Back-end Projects </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Challenges" id="flexCheckDefault" />
+                  <label class="form-check-label" for="flexCheckDefault"> Challenges </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Additional Courses" id="flexCheckDefault" />
+                  <label class="form-check-label" for="flexCheckDefault"> Additional Courses </label>
+                </div>
+              </div>
+
+              <!-- Message input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form4Example56">Any comments or suggestions?</label>
+                <textarea class="form-control border border-dark rounded" id="form4Example56" rows="4"></textarea>
+              </div>
+
+              <!-- Submit button -->
+              <button type="submit" id="submit" class="btn btn-primary btn-block mb-4">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-dark" href="https://ajeethcse.wordpress.com/">ajeethcse.wordpress.com</a>
+      : freeCodeCampProject
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
+</body>
+
+<!-- MDB JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Custom scripts -->
+<script type="text/javascript" src="./js/app.js">
+
+</script>
+
+</html>
